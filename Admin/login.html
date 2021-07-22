@@ -1,0 +1,43 @@
+<html>
+
+<head>
+    <link rel="shortcut icon" href="../favicon.png" type="image/x-icon">
+    <title>Firebase Login</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="login.css" />
+</head>
+
+<body>
+
+    <div id="login_div" class="main-div">
+        <img src="Img/icon.png">
+        <h3>Admin login</h3>
+        <input type="email" placeholder="Email..." id="email_field" />
+        <input type="password" placeholder="Password..." id="password_field" />
+
+        <a href="admin.html" style="text-decoration:none;"><button>Login to Account</button></a>
+    </div>
+
+    <div id="user_div" class="loggedin-div">
+        <h3>Welcome User</h3>
+        <p id="user_para">Welcome to Firebase web login Example. You're currently logged in.</p>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyBPmZU5GIVK_6iDzROpMaYgUaqVu4FadlY",
+            authDomain: "fir-web-login-8b7c5.firebaseapp.com",
+            databaseURL: "https://fir-web-login-8b7c5.firebaseio.com",
+            projectId: "fir-web-login-8b7c5",
+            storageBucket: "fir-web-login-8b7c5.appspot.com",
+            messagingSenderId: "301701306998"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script src="login.js"></script>
+
+</body>
+
+</html>
